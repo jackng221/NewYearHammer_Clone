@@ -63,7 +63,11 @@ namespace MoreMountains.Feedbacks
             // your stop code goes here
 
             vfx.Stop();
-
+        }
+        protected override void CustomReset()
+        {
+            base.CustomReset();
+            vfx.Reinit();
         }
     }
 }
